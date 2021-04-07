@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-12 text-center mt-3 mb-5">
+    <h1>Products</h1>
+  </div>
+  <button class="btn btn-primary btn-block btn-lg mb-5" [routerLink]="['product/' + 0]">Create a new product</button>
+  <table class="table table-striped mb-5">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Operations</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of productList$ | async">
+        <td>{{ product.id }}</td>
+        <td>{{ product.name }}</td>
+        <td>{{ product.price }}</td>
+        <td>{{ product.category }}</td>
+        <td>
+          <div class="btn-group">
+            <button class="btn btn-secondary" [routerLink]="['product/' + product.id]"><i
+                class="fa fa-edit"></i></button>
+            <button class="btn btn-danger" (click)="onClickDelete(product.id || 0)"><i class="fa fa-trash"></i></button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
