@@ -1,27 +1,17 @@
-# StrTestExamAngular
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.0.7.
-
-## Development server
-
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+### 4. Feladat
+- Hozzon létre egy Angular alkalmazást tetszőleges helyen (nem kötött a név).
+- Legyen benne három réteg: class -> service -> component.
+- Az élő json szerverről jelenítse meg a termékeket.
+- A szerver elérhetősége: `https://nettuts.hu/jms/<githubname>/products` 
+(a <githubname> helyére kerüljön az ön github user -neve)
+- Értelmezze a szerveren elérhető termékeket és azok alapján hozza létre a 
+szükséges osztályokat.
+- Készítsen egy teljes értékű CRUD -ot (getAll, get, create, update, delete) 
+egy megfelelő service -ben.
+- Az adatokat táblázatos formában jelenítse meg a főoldalon.
+- Legyen egy űrlap, ahol fel lehet venni új entitást (most Product).
+- Minden sorhoz tartozzon módosítás és törlés gomb.
+- A módosítás egy új űrlapra navigáljon, ahol módosíthatóak a kiválasztott 
+entitás adatai.
+- A törlés törölje az adott sort majd frissítse a listát.
+- Alkalmazzon szabványos Angular Routing -ot az oldalak váltására.
